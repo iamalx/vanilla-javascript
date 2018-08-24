@@ -11,80 +11,78 @@
   <link href="css/main.css" rel="stylesheet">
   <script src="js/main.js"></script>
 </head>
-<style>
-  .wrapper {
-    width: 750px;
-    height: 600px;
-    border: solid;
-    position: absolute;
-    left: 25%;
-    top: 40px;
-
-  }
-
-  .main {
-    font-family: arial;
-    position: absolute;
-    top: 120px;
-    left: 450px;
-  }
-
-  #pic img {
-    width: 400px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-
-  }
-
-  h1 {
-    position: absolute;
-    top: -90px;
-
-  }
+  <style>
+    .wrapper {
+      width: 750px;
+      height: 600px;
+      border: solid;
+      position: absolute;
+      left: 25%;
+      top: 40px;
+    }
   
-  .sign {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #up {
-    color: white;
-    text-align: center;
-    padding: 5px;
-    width: 90px;
-    height: 20px;
-    background-color: rgb(10, 200, 150);
-    border-radius: 10px;
-  }
-
-  #in {
-    position: relative;
-    left: 15px;
-    top: 5px;
-
-  }
-  #upParagraph { 
-    z-index: 0;
-    background-color: red;
-    color: white;
-    width: 100%;
-    height: 100%px;
-    border-radius: 5px;
-    opacity: .75;
-  }
-
-  .typeSec {
-   
-  }
-  input {
-    background-color: linear-gradient(to right, red , yellow);
-    width: 200px;
-    border: none ;
-    border-bottom:1.3px solid black; 
-    margin-bottom: 20px;
-  }
-</style>
+    .main {
+      font-family: arial;
+      position: absolute;
+      top: 120px;
+      left: 450px;
+    }
+  
+    #pic img {
+      width: 400px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+  
+    h1 {
+      position: absolute;
+      top: -90px;
+    }
+    
+    .sign {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    #up {
+      color: white;
+      text-align: center;
+      padding: 5px;
+      width: 90px;
+      height: 20px;
+      background-color: rgb(10, 200, 150);
+      border-radius: 10px;
+    }
+  
+    #in {
+      position: relative;
+      left: 15px;
+      top: 5px;
+  
+    }
+    #upParagraph { 
+      z-index: 0;
+      background-color: red;
+      color: white;
+      width: 100%;
+      height: 100%px;
+      border-radius: 5px;
+      opacity: .75;
+    }
+  
+    .typeSec {
+     
+    }
+    input {
+      background-color: linear-gradient(to right, red , yellow);
+      width: 200px;
+      border: none ;
+      border-bottom:1.3px solid black; 
+      margin-bottom: 20px;
+    }
+    
+  </style>
 
 <body>
 
@@ -93,23 +91,24 @@
       <h1>Sing Up</h1>
 
       <main class="typeSec">
+      
         <form>
-          Full Name <br>
-          <input type="text" name="firstname" ><br>
-         Email
-          <br>
-          <input type="text" name="firstname"><br> Username
-          <br>
-          <input type="text" name="firstname"><br> Password
-          <br>
-          <input type="text" name="firstname"><br>Repeat Password<br>
-          <input type="text" name="firstname"><br>
+          <label for='name'>Full Name</label> <br>
+          <input id ='name'type="text" name="firstname" ><br>
+          <label>Last Name</label> <br>
+          <input type="text" name="firstname"><br> 
+          <label> Email</label> <br>
+          <input type="text" name="firstname"><br> 
+          <label>Password</label> <br>
+          <input type="password" name="firstname"><br>
+          <label>Repeat Password</label> <br>
+          <input type="password" name="firstname"><br>
         </form>
       </main>
 
       <section class="sign">
-        <p id="up" onclick="upFunct"> Sign up </p>
-        <p id="in" onclick="inFunct"> Sign in </p>
+        <button id="up" onclick="upFunct"> Sign up </button>
+        <button id="in" onclick="inFunct"> Sign in </button>
 
       </section>
     </div>
@@ -117,7 +116,6 @@
     <aside id="pic">
       <img src="img/russia.jpg">
     </aside>
-
 
   </div>
 
